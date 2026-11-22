@@ -1,0 +1,1333 @@
+<!DOCTYPE html>
+<html lang="ka" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FantastiClean Georgia | ეკომეგობრული მიკროფიბრა & Car Detailing</title>
+  <meta name="description" content="FantastiClean Georgia - პრემიუმ ხარისხის ეკომეგობრული და ანტიალერგიული მიკროფიბრის ტილოები, 1100 GSM ავტო დითეილინგის პირსახოცები და B2B კომერციული შეთავაზებები.">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              200: '#bae6fd',
+              300: '#7dd3fc',
+              400: '#38bdf8',
+              500: '#0ea5e9',
+              600: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+            },
+            eco: {
+              50: '#ecfdf5',
+              100: '#d1fae5',
+              500: '#10b981',
+              600: '#059669',
+              700: '#047857'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts: Inter & Noto Sans Georgian -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Noto+Sans+Georgian:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Styles & Print Engine -->
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-white text-slate-800 antialiased selection:bg-brand-500 selection:text-white">
+
+  <!-- ==========================================
+       TOP ANNOUNCEMENT BAR
+       ========================================== -->
+  <div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center justify-center w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+        <span class="font-medium" data-i18n="topBar.deliveryBadge">🚀 სწრაფი ექსპრეს მიტანა მთელ საქართველოში | Wolt & Glovo თბილისში</span>
+      </div>
+      <div class="flex items-center gap-4 text-slate-400">
+        <div class="hidden sm:flex items-center gap-1.5">
+          <span data-i18n="topBar.b2bHotline">B2B კორპორატიული ხაზი:</span>
+          <a href="tel:+995599773999" class="text-emerald-400 font-semibold hover:text-emerald-300">+995 599 77 39 99</a>
+        </div>
+        <span class="hidden sm:inline">|</span>
+        <span class="text-slate-300" data-i18n="topBar.retailBadge">საცალო და საბითუმო შეკვეთები</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION
+       ========================================== -->
+  <header class="glass-nav sticky top-0 z-40 shadow-sm transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#home" class="flex items-center gap-3 group focus:outline-none">
+        <img src="logo.png" alt="FantastiClean Georgia Logo" class="h-12 w-12 sm:h-13 sm:w-13 object-contain transition-transform duration-200 group-hover:scale-105" onerror="this.onerror=null; this.src='images/logo.png';" />
+        <div class="flex flex-col">
+          <span class="text-xl sm:text-2xl font-black text-slate-900 tracking-tight leading-none">Fantasti<span class="text-sky-600">Clean</span></span>
+          <span class="text-[10px] font-extrabold tracking-[0.25em] text-emerald-600 uppercase mt-0.5">GEORGIA</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-600">
+        <a href="#home" class="hover:text-brand-600 transition-colors" data-i18n="nav.home">მთავარი</a>
+        <a href="#products" class="hover:text-brand-600 transition-colors" data-i18n="nav.products">პროდუქცია</a>
+        <a href="#car-detailing" class="hover:text-brand-600 transition-colors flex items-center gap-1.5">
+          <span data-i18n="nav.carDetailing">Car Detailing</span>
+          <span class="px-1.5 py-0.5 text-[10px] font-extrabold bg-sky-100 text-sky-700 rounded-md">1100 GSM</span>
+        </a>
+        <a href="#calculator" class="hover:text-brand-600 transition-colors flex items-center gap-1">
+          <span data-i18n="nav.b2bOffer">B2B შეთავაზება</span>
+          <i class="fa-solid fa-calculator text-xs text-brand-500"></i>
+        </a>
+        <a href="#benefits" class="hover:text-brand-600 transition-colors" data-i18n="nav.benefits">უპირატესობები</a>
+        <a href="#contact" class="hover:text-brand-600 transition-colors" data-i18n="nav.contact">კონტაქტი</a>
+      </nav>
+
+      <!-- Right Header Actions (Language Switcher, Delivery Modal, Cart Anchor) -->
+      <div class="flex items-center gap-3">
+        
+        <!-- Language Switcher Toggle (GE / EN) -->
+        <button type="button" id="lang-toggle-btn" class="flex items-center gap-1.5 px-3 py-1.5 rounded-xl border border-slate-200 hover:border-brand-500 bg-white text-xs font-bold text-slate-700 shadow-sm hover:text-brand-600 transition-all focus:outline-none" title="Switch Language / ენის შეცვლა">
+          <i class="fa-solid fa-globe text-brand-500"></i>
+          <span id="current-lang-label">EN</span>
+        </button>
+
+        <!-- Wolt / Glovo Direct Order Button -->
+        <button type="button" class="open-delivery-modal-btn hidden sm:flex items-center gap-2 px-3.5 py-2 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-700 text-xs font-bold border border-emerald-200 transition-all shadow-sm">
+          <i class="fa-solid fa-motorcycle text-emerald-600"></i>
+          <span data-i18n="nav.orderWoltGlovo">Wolt / Glovo მიტანა</span>
+        </button>
+
+        <!-- Cart / Quote Button with live counter -->
+        <a href="#calculator" class="relative flex items-center justify-center p-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all" title="View Order Quote">
+          <i class="fa-solid fa-file-invoice-dollar text-base text-slate-800"></i>
+          <span id="nav-cart-count" class="absolute -top-1.5 -right-1.5 w-5 h-5 rounded-full bg-brand-500 text-white text-[11px] font-extrabold flex items-center justify-center shadow-md">
+            0
+          </span>
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button type="button" id="mobile-menu-btn" class="lg:hidden p-2 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Slide-out Menu -->
+    <div id="mobile-menu" class="hidden fixed inset-0 z-50 bg-slate-900/75 lg:hidden">
+      <div class="fixed inset-y-0 right-0 w-full max-w-xs bg-white shadow-2xl p-6 flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between pb-6 border-b border-slate-100">
+            <div class="flex items-center gap-3">
+              <img src="logo.png" alt="FantastiClean Georgia" class="h-10 w-10 object-contain" onerror="this.onerror=null; this.src='images/logo.png';" />
+              <div class="flex flex-col">
+                <span class="text-lg font-black text-slate-900 leading-none">Fantasti<span class="text-sky-600">Clean</span></span>
+                <span class="text-[9px] font-extrabold tracking-widest text-emerald-600 uppercase mt-0.5">GEORGIA</span>
+              </div>
+            </div>
+            <button type="button" id="mobile-menu-close" class="p-2 text-slate-500 hover:text-slate-900">
+              <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+          </div>
+
+          <nav class="mt-6 flex flex-col gap-4 text-base font-bold text-slate-700">
+            <a href="#home" class="mobile-nav-link hover:text-brand-600 py-1" data-i18n="nav.home">მთავარი</a>
+            <a href="#products" class="mobile-nav-link hover:text-brand-600 py-1" data-i18n="nav.products">პროდუქცია</a>
+            <a href="#car-detailing" class="mobile-nav-link hover:text-brand-600 py-1 flex items-center justify-between">
+              <span data-i18n="nav.carDetailing">Car Detailing</span>
+              <span class="px-2 py-0.5 text-xs bg-sky-100 text-sky-700 rounded-md">1100 GSM</span>
+            </a>
+            <a href="#calculator" class="mobile-nav-link hover:text-brand-600 py-1" data-i18n="nav.b2bOffer">B2B შეთავაზება</a>
+            <a href="#benefits" class="mobile-nav-link hover:text-brand-600 py-1" data-i18n="nav.benefits">უპირატესობები</a>
+            <a href="#contact" class="mobile-nav-link hover:text-brand-600 py-1" data-i18n="nav.contact">კონტაქტი</a>
+          </nav>
+        </div>
+
+        <div class="space-y-3 pt-6 border-t border-slate-100">
+          <button type="button" id="mobile-lang-toggle-btn" class="w-full py-2.5 px-4 rounded-xl border border-slate-200 text-sm font-bold text-slate-700 flex items-center justify-center gap-2">
+            <i class="fa-solid fa-globe text-brand-500"></i>
+            <span id="mobile-current-lang-label">Switch to EN</span>
+          </button>
+          <button type="button" class="open-delivery-modal-btn w-full py-2.5 px-4 rounded-xl bg-emerald-500 text-white text-sm font-bold flex items-center justify-center gap-2">
+            <i class="fa-solid fa-motorcycle"></i>
+            <span data-i18n="nav.orderWoltGlovo">Wolt / Glovo მიტანა</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section id="home" class="relative pt-12 pb-20 sm:pt-20 sm:pb-28 eco-gradient-bg overflow-hidden border-b border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Hero Text Column -->
+        <div class="lg:col-span-7 space-y-6 text-left">
+          
+          <!-- Quality Badge -->
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs sm:text-sm font-bold shadow-sm badge-pulse">
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            <span data-i18n="hero.badge">🌿 100% ეკომეგობრული & ანტიალერგიული პრემიუმ ხარისხი</span>
+          </div>
+
+          <!-- Main Headline -->
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-[1.2]" data-i18n="hero.headline">
+            ეკომეგობრული და ანტიალერგიული მიკროფიბრის ტექნოლოგია სახლისა და ავტომობილის იდეალური სისუფთავისთვის
+          </h1>
+
+          <!-- Subheadline -->
+          <p class="text-base sm:text-lg text-slate-600 leading-relaxed font-normal max-w-2xl" data-i18n="hero.subheadline">
+            დაემშვიდობეთ ქიმიურ საწმენდებსა და ერთჯერად ქაღალდის ხელსახოცებს. FantastiClean Georgia გთავაზობთ რევოლუციურ მრავალფუნქციურ რულონებს (15-დან 75 ნაჭრამდე) და 1100 GSM ავტო დითეილინგ მიკროფიბრას. ასუფთავებს მხოლოდ წყლით და თითო ტილო უძლებს 50-დან 100-ზე მეტ რეცხვას.
+          </p>
+
+          <!-- Call-to-Action Buttons -->
+          <div class="flex flex-wrap items-center gap-3.5 pt-2">
+            <!-- View Products Button -->
+            <a href="#products" class="py-3.5 px-6 rounded-2xl bg-brand-600 hover:bg-brand-500 text-white font-bold text-sm sm:text-base shadow-lg shadow-brand-500/25 flex items-center gap-2.5 transition-all transform hover:-translate-y-0.5">
+              <i class="fa-solid fa-shapes"></i>
+              <span data-i18n="hero.ctaProducts">პროდუქციის ნახვა</span>
+            </a>
+
+            <!-- Wolt / Glovo Button -->
+            <button type="button" class="open-delivery-modal-btn py-3.5 px-6 rounded-2xl bg-white hover:bg-slate-50 text-slate-800 font-bold text-sm sm:text-base border border-slate-200 shadow-sm flex items-center gap-2.5 transition-all hover:border-emerald-500">
+              <span class="flex items-center gap-1.5">
+                <span class="w-2.5 h-2.5 rounded-full bg-sky-400"></span>
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span>
+              </span>
+              <span data-i18n="hero.ctaWoltGlovo">შეუკვეთე Wolt / Glovo-ზე</span>
+            </button>
+
+            <!-- B2B Offer Generator Button -->
+            <a href="#calculator" class="py-3.5 px-5 rounded-2xl bg-slate-900 hover:bg-slate-800 text-white font-semibold text-xs sm:text-sm flex items-center gap-2 transition-all">
+              <i class="fa-solid fa-file-contract text-emerald-400"></i>
+              <span data-i18n="hero.ctaB2B">B2B შეთავაზების გენერატორი</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges & Highlights Grid -->
+          <div class="pt-8 border-t border-slate-200 grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div class="bg-white/80 p-3 rounded-xl border border-slate-100 shadow-xs">
+              <div class="text-xl sm:text-2xl font-black text-brand-600" data-i18n="hero.stat1Val">1100 GSM</div>
+              <div class="text-[11px] text-slate-500 font-medium" data-i18n="hero.stat1Label">ულტრა სიმკვრივე</div>
+            </div>
+            <div class="bg-white/80 p-3 rounded-xl border border-slate-100 shadow-xs">
+              <div class="text-xl sm:text-2xl font-black text-emerald-600" data-i18n="hero.stat2Val">0% ქიმია</div>
+              <div class="text-[11px] text-slate-500 font-medium" data-i18n="hero.stat2Label">მხოლოდ წყლით</div>
+            </div>
+            <div class="bg-white/80 p-3 rounded-xl border border-slate-100 shadow-xs">
+              <div class="text-xl sm:text-2xl font-black text-slate-900" data-i18n="hero.stat3Val">500+</div>
+              <div class="text-[11px] text-slate-500 font-medium" data-i18n="hero.stat3Label">მანქანური რეცხვა</div>
+            </div>
+            <div class="bg-white/80 p-3 rounded-xl border border-slate-100 shadow-xs">
+              <div class="text-xl sm:text-2xl font-black text-sky-600" data-i18n="hero.stat4Val">100%</div>
+              <div class="text-[11px] text-slate-500 font-medium" data-i18n="hero.stat4Label">ანტიალერგიული</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase Card -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            <!-- Showcase Glass Card -->
+            <div class="relative glass-card rounded-3xl p-6 sm:p-8 bg-white border border-slate-200/80 shadow-2xl space-y-6">
+              
+              <!-- Card Header -->
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold">
+                    Official Flagship
+                  </span>
+                  <span class="px-2.5 py-1 rounded-full bg-sky-100 text-sky-800 text-xs font-bold">
+                    Car Detailing
+                  </span>
+                </div>
+                <div class="flex items-center gap-1 text-amber-400 text-xs">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+
+              <!-- Main Hero Graphic (FantastiClean Rolls Showcase) -->
+              <div class="bg-gradient-to-b from-sky-50/80 via-slate-50 to-white rounded-2xl p-5 text-slate-900 text-center relative overflow-hidden border border-slate-200/80 shadow-xs">
+                <div class="absolute top-3 right-3">
+                  <span class="px-2.5 py-1 rounded-md bg-emerald-500 text-white font-extrabold text-xs shadow-xs">
+                    15 - 75 ცალი
+                  </span>
+                </div>
+                <div class="py-2 flex items-center justify-center">
+                  <img src="assets/products/roll-36-detailing.jpg" alt="FantastiClean 36-Pack Detailing Roll" class="h-36 w-auto object-contain transition-transform duration-300 hover:scale-105" onerror="if(!this.dataset.t1){this.dataset.t1='1'; this.src='images/roll-36-detailing.jpg';} else if(!this.dataset.t2){this.dataset.t2='1'; this.src='roll-36-detailing.jpg';} else {this.onerror=null; this.src='logo.png';}" />
+                </div>
+                <h3 class="text-lg font-black text-slate-900 mt-1">მრავალფუნქციური მიკროფიბრის რულონები</h3>
+                <p class="text-xs text-slate-500 mt-0.5">15-დან 75 ნაჭრამდე • 100+ რეცხვა თითო ტილო</p>
+                
+                <div class="flex items-center justify-around pt-3 mt-3 border-t border-slate-100 text-xs">
+                  <div>
+                    <span class="block text-sky-600 font-extrabold">14.4 - 25 მ</span>
+                    <span class="text-[10px] text-slate-500">სიგრძე</span>
+                  </div>
+                  <div>
+                    <span class="block text-emerald-600 font-extrabold">100+ Washes</span>
+                    <span class="text-[10px] text-slate-500">გამძლეობა</span>
+                  </div>
+                  <div>
+                    <span class="block text-amber-600 font-extrabold">19 ₾-დან</span>
+                    <span class="text-[10px] text-slate-500">ფასი</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fast Wolt / Glovo Delivery Badge in Hero -->
+              <div class="p-4 rounded-2xl bg-sky-50/80 border border-sky-100 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                  <div class="w-11 h-11 rounded-xl bg-white shadow-xs flex items-center justify-center p-1 border border-slate-100">
+                    <img src="logo.png" alt="FantastiClean" class="h-9 w-9 object-contain" onerror="this.onerror=null; this.src='images/logo.png';" />
+                  </div>
+                  <div>
+                    <h5 class="text-xs font-bold text-slate-900">მომენტალური მიტანა</h5>
+                    <p class="text-[11px] text-slate-500">Wolt & Glovo თბილისში 25-35 წთ</p>
+                  </div>
+                </div>
+                <button type="button" class="open-delivery-modal-btn px-3 py-1.5 rounded-lg bg-sky-600 text-white text-xs font-bold hover:bg-sky-500 transition-colors">
+                  შეუკვეთე
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PRODUCT CATALOG GRID (INTERACTIVE)
+       ========================================== -->
+  <section id="products" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="px-3.5 py-1 rounded-full bg-sky-100 text-sky-700 text-xs font-extrabold uppercase tracking-wider inline-block mb-3">
+          FANTASTICLEAN PRODUCTS
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight" data-i18n="catalog.title">
+          პროდუქციის კატალოგი
+        </h2>
+        <p class="text-slate-600 text-base mt-2" data-i18n="catalog.subtitle">
+          პრემიუმ ხარისხის მიკროფიბრის ტილოები, ავტო დითეილინგის აქსესუარები და პროფესიონალური ნაკრებები
+        </p>
+
+        <!-- Category Filter Tabs -->
+        <div class="flex flex-wrap items-center justify-center gap-2 mt-8">
+          <button type="button" data-cat="all" class="category-tab-btn py-2 px-4 rounded-xl text-xs sm:text-sm font-bold transition-all bg-sky-600 text-white shadow-md" data-i18n="categories.all">
+            ყველა პროდუქტი
+          </button>
+          <button type="button" data-cat="rolls" class="category-tab-btn py-2 px-4 rounded-xl text-xs sm:text-sm font-bold transition-all bg-white text-slate-600 border border-slate-200 hover:border-sky-500 flex items-center gap-1.5" data-i18n="categories.rolls">
+            <span>მიკროფიბრის რულონები</span>
+            <span class="px-1.5 py-0.2 rounded-md bg-emerald-100 text-emerald-800 text-[10px] font-extrabold">NEW</span>
+          </button>
+          <button type="button" data-cat="car" class="category-tab-btn py-2 px-4 rounded-xl text-xs sm:text-sm font-bold transition-all bg-white text-slate-600 border border-slate-200 hover:border-sky-500" data-i18n="categories.car">
+            ავტო დითეილინგი
+          </button>
+          <button type="button" data-cat="home" class="category-tab-btn py-2 px-4 rounded-xl text-xs sm:text-sm font-bold transition-all bg-white text-slate-600 border border-slate-200 hover:border-sky-500" data-i18n="categories.home">
+            სახლი და სამზარეულო
+          </button>
+          <button type="button" data-cat="glass" class="category-tab-btn py-2 px-4 rounded-xl text-xs sm:text-sm font-bold transition-all bg-white text-slate-600 border border-slate-200 hover:border-sky-500" data-i18n="categories.glass">
+            მინა და ეკრანები
+          </button>
+          <button type="button" data-cat="b2b" class="category-tab-btn py-2 px-4 rounded-xl text-xs sm:text-sm font-bold transition-all bg-white text-slate-600 border border-slate-200 hover:border-sky-500" data-i18n="categories.b2b">
+            B2B & საბითუმო
+          </button>
+        </div>
+      </div>
+
+      <!-- Products Grid Container -->
+      <div id="products-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Rendered dynamically by js/app.js -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       OFFICIAL ROLLS GUIDE & FLYER SHOWCASE
+       ========================================== -->
+  <section class="py-16 bg-gradient-to-b from-slate-50 to-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-gradient-to-r from-sky-900 via-slate-900 to-emerald-950 rounded-3xl p-8 sm:p-12 text-white shadow-2xl relative overflow-hidden">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+          <div class="lg:col-span-7 space-y-5 text-left">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-300 text-xs font-bold border border-emerald-500/30">
+              <i class="fa-solid fa-scroll"></i>
+              <span>FANTASTICLEAN ROLLS GUIDE</span>
+            </div>
+
+            <h3 class="text-2xl sm:text-3xl font-black text-white leading-tight">
+              მრავალფუნქციური რულონების ოფიციალური გზამკვლევი
+            </h3>
+
+            <p class="text-slate-300 text-sm leading-relaxed">
+              რევოლუციური გადაწყვეტა სახლისთვის, ავტოსამრეცხაოებისა და ბიზნესისთვის! FantastiClean-ის რულონებში თითოეული პერფორირებული ტილო უძლებს 50-დან 100-ზე მეტ რეცხვას. ერთი რულონი სრულად ანაცვლებს ასობით ერთჯერად ქაღალდის ხელსახოცს.
+            </p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2 text-xs">
+              <div class="bg-white/10 p-3 rounded-xl border border-white/10">
+                <span class="text-emerald-400 font-black block text-base">15 - 75</span>
+                <span class="text-slate-300 text-[11px]">ნაჭერი რულონში</span>
+              </div>
+              <div class="bg-white/10 p-3 rounded-xl border border-white/10">
+                <span class="text-sky-400 font-black block text-base">50 - 100+</span>
+                <span class="text-slate-300 text-[11px]">რეცხვა თითო ტილოზე</span>
+              </div>
+              <div class="bg-white/10 p-3 rounded-xl border border-white/10">
+                <span class="text-amber-400 font-black block text-base">19 ₾ - 94 ₾</span>
+                <span class="text-slate-300 text-[11px]">საცალო ფასები</span>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-3 pt-3">
+              <a href="#products" class="py-3 px-5 rounded-xl bg-sky-500 hover:bg-sky-400 text-white font-bold text-xs flex items-center gap-2 transition-all shadow-md">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>რულონების შეკვეთა</span>
+              </a>
+              <button type="button" onclick="openFlyerModal()" class="py-3 px-5 rounded-xl bg-white/15 hover:bg-white/25 text-white font-bold text-xs border border-white/20 flex items-center gap-2 transition-all">
+                <i class="fa-solid fa-expand"></i>
+                <span>ოფიციალური პრაის-ლისტის ნახვა</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Flyer Preview Thumbnail on the right -->
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="relative group cursor-pointer" onclick="openFlyerModal()">
+              <div class="relative bg-white p-2 rounded-2xl shadow-2xl border border-white/20 overflow-hidden transform group-hover:scale-102 transition duration-300">
+                <img src="assets/products-guide.jpg" alt="FantastiClean Official Price Guide" class="w-full max-w-[280px] h-auto rounded-xl object-cover shadow-sm" onerror="if(!this.dataset.t1){this.dataset.t1='1'; this.src='images/products-guide.jpg';} else if(!this.dataset.t2){this.dataset.t2='1'; this.src='products-guide.jpg';} else {this.onerror=null; this.src='logo.png';}" />
+                <div class="absolute inset-0 bg-slate-900/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-2xl">
+                  <span class="py-2 px-4 bg-white text-slate-900 text-xs font-bold rounded-xl shadow-lg flex items-center gap-1.5">
+                    <i class="fa-solid fa-magnifying-glass-plus text-sky-600"></i> გადიდება
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CAR DETAILING SPOTLIGHT SECTION
+       ========================================== -->
+  <section id="car-detailing" class="py-20 bg-slate-900 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Text Info -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-sky-950 border border-sky-700/60 text-sky-400 text-xs font-bold uppercase tracking-wider" data-i18n="carSection.tag">
+            <i class="fa-solid fa-car-side"></i>
+            <span>PROFESSIONAL AUTOMOTIVE CARE</span>
+          </div>
+
+          <h2 class="text-3xl sm:text-4xl font-black text-white tracking-tight leading-tight" data-i18n="carSection.title">
+            ავტომობილის პრემიუმ დითეილინგი 1100 GSM მიკროფიბრით
+          </h2>
+
+          <p class="text-slate-300 text-base leading-relaxed" data-i18n="carSection.desc">
+            სპეციალურად შექმნილი ავტომოყვარულებისთვის, დითეილინგ სტუდიებისთვის და პრემიუმ ავტოსამრეცხაოებისთვის. ჩვენი 1100 GSM ორმხრივი პირსახოცი უზრუნველყოფს საღებავის 100%-ით უსაფრთხო, ნაკაწრების გარეშე გაშრობას.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <!-- Feature 1 -->
+            <div class="flex items-start gap-3.5 bg-slate-800/60 p-4 rounded-2xl border border-slate-700/50">
+              <div class="w-10 h-10 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center shrink-0 text-lg font-bold">
+                1
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-sm" data-i18n="carSection.feat1Title">1100 GSM ორმხრივი ულტრა-სიმკვრივე</h4>
+                <p class="text-xs text-slate-400 mt-1" data-i18n="carSection.feat1Desc">
+                  შეიწოვს 3.5 ლიტრამდე წყალს ერთ ჯერზე. ერთი პირსახოცი საკმარისია მთლიანი ჯიპის (SUV) გასამშრალებლად გაწურვის გარეშე.
+                </p>
+              </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="flex items-start gap-3.5 bg-slate-800/60 p-4 rounded-2xl border border-slate-700/50">
+              <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 text-lg font-bold">
+                2
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-sm" data-i18n="carSection.feat2Title">აბრეშუმის ნაპირი (Silk Banded)</h4>
+                <p class="text-xs text-slate-400 mt-1" data-i18n="carSection.feat2Desc">
+                  არ შეიცავს მყარ ნაკერებს. იცავს კერამიკულ საფარს, ლაქს და მგრძნობიარე ზედაპირებს მიკრონაკაწრებისგან.
+                </p>
+              </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="flex items-start gap-3.5 bg-slate-800/60 p-4 rounded-2xl border border-slate-700/50">
+              <div class="w-10 h-10 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center shrink-0 text-lg font-bold">
+                3
+              </div>
+              <div>
+                <h4 class="font-bold text-white text-sm" data-i18n="carSection.feat3Title">სალონის ღრმა წმენდა</h4>
+                <p class="text-xs text-slate-400 mt-1" data-i18n="carSection.feat3Desc">
+                  აფთიაქისებური სისუფთავე ტყავის, ალკანტარისა და პლასტმასის დეტალებისთვის ყოველგვარი ქიმიური ნარჩენების გარეშე.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4">
+            <a href="#calculator" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl bg-sky-500 hover:bg-sky-400 text-white font-bold text-sm transition-all shadow-lg shadow-sky-500/20">
+              <i class="fa-solid fa-calculator"></i>
+              <span data-i18n="carSection.ctaCalculate">დაითვალეთ ავტოპარკის / სტუდიის შეკვეთა</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Visual Showcase -->
+        <div class="lg:col-span-5">
+          <div class="bg-gradient-to-b from-slate-800 to-slate-900 border border-slate-700 rounded-3xl p-6 sm:p-8 space-y-6 shadow-2xl">
+            <div class="flex items-center justify-between border-b border-slate-700 pb-4">
+              <div>
+                <span class="text-xs font-bold text-sky-400 uppercase tracking-wider">Flawless Detailing</span>
+                <h3 class="text-lg font-black text-white">Korean Microfiber Tech</h3>
+              </div>
+              <span class="px-3 py-1 rounded-full bg-emerald-500/20 text-emerald-400 text-xs font-extrabold border border-emerald-500/30">
+                Paint Safe
+              </span>
+            </div>
+
+            <!-- Visual Comparison Matrix -->
+            <div class="space-y-3 text-xs">
+              <div class="bg-slate-900/80 p-3.5 rounded-xl border border-slate-800 flex items-center justify-between">
+                <span class="text-slate-300 font-medium">სიმკვრივე / Density</span>
+                <span class="font-extrabold text-sky-400">1100 GSM (პრემიუმი)</span>
+              </div>
+              <div class="bg-slate-900/80 p-3.5 rounded-xl border border-slate-800 flex items-center justify-between">
+                <span class="text-slate-300 font-medium">ნაკაწრების რისკი / Scratch Risk</span>
+                <span class="font-extrabold text-emerald-400">0% (Zero Swirls)</span>
+              </div>
+              <div class="bg-slate-900/80 p-3.5 rounded-xl border border-slate-800 flex items-center justify-between">
+                <span class="text-slate-300 font-medium">გაშრობის დრო / Dry Time</span>
+                <span class="font-extrabold text-amber-400">3 წუთი SUV-ზე</span>
+              </div>
+              <div class="bg-slate-900/80 p-3.5 rounded-xl border border-slate-800 flex items-center justify-between">
+                <span class="text-slate-300 font-medium">კერამიკა & ცვილი / Coatings</span>
+                <span class="font-extrabold text-purple-400">100% თავსებადი</span>
+              </div>
+            </div>
+
+            <!-- Direct Quick Order on Wolt/Glovo -->
+            <div class="p-4 rounded-2xl bg-slate-800/80 border border-slate-700 flex items-center justify-between">
+              <div>
+                <p class="text-xs font-bold text-white">გჭირდებათ დღესვე?</p>
+                <p class="text-[11px] text-slate-400">მიიღეთ Wolt/Glovo კურიერით 30 წუთში</p>
+              </div>
+              <button type="button" class="open-delivery-modal-btn px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-white text-xs font-bold transition-all">
+                მიტანა
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       INTERACTIVE ORDER & B2B PRICE CALCULATOR
+       (ONE-PAGER QUOTE BUILDER)
+       ========================================== -->
+  <section id="calculator" class="py-20 bg-white border-y border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Title & Subtitle -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase tracking-wider inline-block mb-3">
+          INSTANT QUOTE & ORDER BUILDER
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight" data-i18n="calculator.title">
+          ონლაინ შეკვეთა & B2B შეთავაზების გენერატორი
+        </h2>
+        <p class="text-slate-600 text-base mt-2" data-i18n="calculator.subtitle">
+          აირჩიეთ პროდუქცია, მიუთითეთ რაოდენობა და სისტემა ავტომატურად დაითვლის საბითუმო ფასდაკლებას. მომენტალურად ჩამოტვირთეთ ოფიციალური კომერციული შეთავაზება (One-Pager PDF)!
+        </p>
+      </div>
+
+      <!-- Main Calculator Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Left Column: Client Data & Cart Items Table (8 cols) -->
+        <div class="lg:col-span-8 space-y-6">
+          
+          <!-- Client Type Switcher & Wholesale Discount Banner -->
+          <div class="bg-slate-50 p-6 rounded-3xl border border-slate-200 space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div>
+                <label class="text-xs font-extrabold text-slate-500 uppercase tracking-wider block mb-1" data-i18n="calculator.clientType">
+                  კლიენტის ტიპი:
+                </label>
+                <div class="inline-flex p-1 rounded-2xl bg-white border border-slate-200 shadow-xs">
+                  <button type="button" id="btn-client-retail" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all bg-slate-100 text-slate-700" data-i18n="calculator.retailClient">
+                    ფიზიკური პირი / საცალო
+                  </button>
+                  <button type="button" id="btn-client-b2b" class="px-4 py-2 rounded-xl text-xs sm:text-sm font-bold transition-all bg-sky-600 text-white shadow-sm" data-i18n="calculator.b2bClient">
+                    იურიდიული პირი / B2B კორპორატიული
+                  </button>
+                </div>
+              </div>
+
+              <!-- Wholesale Tiers Pill -->
+              <div class="bg-emerald-50 border border-emerald-200 p-3 rounded-2xl text-xs">
+                <span class="font-bold text-emerald-800 block" data-i18n="calculator.discountNotice">🎉 B2B საბითუმო ფასდაკლების სისტემა:</span>
+                <div class="flex items-center gap-3 mt-1 text-[11px] font-semibold text-emerald-700">
+                  <span data-i18n="calculator.tier1">50+ ცალი: -10%</span>
+                  <span>•</span>
+                  <span data-i18n="calculator.tier2">100+ ცალი: -15%</span>
+                  <span>•</span>
+                  <span data-i18n="calculator.tier3">200+ ცალი: -20%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Client Info Inputs Collapsible Grid -->
+            <div class="pt-4 border-t border-slate-200/80">
+              <h4 class="text-xs font-extrabold text-slate-700 uppercase tracking-wider mb-3 flex items-center gap-1.5" data-i18n="calculator.companyInfoTitle">
+                <i class="fa-solid fa-address-card text-sky-500"></i> ორგანიზაციის / დამკვეთის მონაცემები
+              </h4>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                <div>
+                  <label class="font-bold text-slate-600 mb-1 block" data-i18n="calculator.companyName">კომპანიის / ორგანიზაციის დასახელება</label>
+                  <input type="text" id="client-name" class="w-full px-3 py-2 rounded-xl border border-slate-200 bg-white font-medium focus:ring-2 focus:ring-sky-500 focus:outline-none" data-i18n-placeholder="calculator.companyNamePlh" placeholder="მაგ: შპს 'ჯორჯია დითეილინგ გრუპი'">
+                </div>
+                <div>
+                  <label class="font-bold text-slate-600 mb-1 block" data-i18n="calculator.taxId">საიდენტიფიკაციო კოდი (ს/კ)</label>
+                  <input type="text" id="client-taxId" class="w-full px-3 py-2 rounded-xl border border-slate-200 bg-white font-medium focus:ring-2 focus:ring-sky-500 focus:outline-none" data-i18n-placeholder="calculator.taxIdPlh" placeholder="9 ან 11 ნიშნა კოდი">
+                </div>
+                <div>
+                  <label class="font-bold text-slate-600 mb-1 block" data-i18n="calculator.contactPerson">საკონტაქტო პირი</label>
+                  <input type="text" id="client-person" class="w-full px-3 py-2 rounded-xl border border-slate-200 bg-white font-medium focus:ring-2 focus:ring-sky-500 focus:outline-none" data-i18n-placeholder="calculator.contactPersonPlh" placeholder="სახელი, გვარი">
+                </div>
+                <div>
+                  <label class="font-bold text-slate-600 mb-1 block" data-i18n="calculator.phone">ტელეფონის ნომერი</label>
+                  <input type="text" id="client-phone" class="w-full px-3 py-2 rounded-xl border border-slate-200 bg-white font-medium focus:ring-2 focus:ring-sky-500 focus:outline-none" data-i18n-placeholder="calculator.phonePlh" placeholder="+995 5XX XX XX XX">
+                </div>
+                <div>
+                  <label class="font-bold text-slate-600 mb-1 block" data-i18n="calculator.email">ელ-ფოსტა</label>
+                  <input type="email" id="client-email" class="w-full px-3 py-2 rounded-xl border border-slate-200 bg-white font-medium focus:ring-2 focus:ring-sky-500 focus:outline-none" data-i18n-placeholder="calculator.emailPlh" placeholder="company@example.ge">
+                </div>
+                <div>
+                  <label class="font-bold text-slate-600 mb-1 block" data-i18n="calculator.address">მიტანის მისამართი / ქალაქი</label>
+                  <input type="text" id="client-address" class="w-full px-3 py-2 rounded-xl border border-slate-200 bg-white font-medium focus:ring-2 focus:ring-sky-500 focus:outline-none" data-i18n-placeholder="calculator.addressPlh" placeholder="თბილისი, ი. ჭავჭავაძის გამზ. 24">
+                </div>
+                <div class="sm:col-span-2">
+                  <label class="font-bold text-slate-600 mb-1 block" data-i18n="calculator.notes">შენიშვნა / სპეციალური მოთხოვნები</label>
+                  <input type="text" id="client-notes" class="w-full px-3 py-2 rounded-xl border border-slate-200 bg-white font-medium focus:ring-2 focus:ring-sky-500 focus:outline-none" data-i18n-placeholder="calculator.notesPlh" placeholder="სასურველი მიწოდების დრო, შეფუთვის ტიპი და ა.შ.">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Items in Order Table Container -->
+          <div class="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-xs">
+            <div class="p-5 border-b border-slate-100 flex items-center justify-between">
+              <h3 class="font-black text-slate-900 text-base flex items-center gap-2">
+                <i class="fa-solid fa-list-check text-sky-500"></i>
+                <span data-i18n="calculator.selectedItems">შერჩეული პროდუქტები</span>
+              </h3>
+              <span id="calc-total-units" class="px-3 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-extrabold">
+                0 ცალი
+              </span>
+            </div>
+
+            <!-- Empty State -->
+            <div id="calc-empty-state" class="hidden p-10 text-center text-slate-400">
+              <i class="fa-solid fa-basket-shopping text-4xl mb-3 text-slate-300"></i>
+              <p class="text-sm font-medium" data-i18n="calculator.emptyCart">
+                ჯერ არაფერი გაქვთ დამატებული. აირჩიეთ პროდუქტები კატალოგიდან ან ქვემოთ მოცემული სიიდან.
+              </p>
+            </div>
+
+            <!-- Table of Items -->
+            <div id="calc-table-container" class="overflow-x-auto">
+              <table class="w-full text-left border-collapse">
+                <thead>
+                  <tr class="bg-slate-50 text-slate-500 text-xs font-bold uppercase tracking-wider border-b border-slate-200">
+                    <th class="py-3 px-4" data-i18n="calculator.thItem">პროდუქტი</th>
+                    <th class="py-3 px-4" data-i18n="calculator.thPrice">ერთ. ფასი</th>
+                    <th class="py-3 px-4" data-i18n="calculator.thQty">რაოდ.</th>
+                    <th class="py-3 px-4" data-i18n="calculator.thTotal">ჯამი</th>
+                    <th class="py-3 px-4 text-center" data-i18n="calculator.thAction">მოქმედება</th>
+                  </tr>
+                </thead>
+                <tbody id="calc-items-tbody">
+                  <!-- Rendered dynamically by js/app.js -->
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Quick Add Dropdown Selector -->
+            <div class="p-4 bg-slate-50 border-t border-slate-100 flex flex-col sm:flex-row items-center gap-3">
+              <div class="w-full sm:flex-1">
+                <select id="calc-add-product-select" class="w-full px-3 py-2 rounded-xl border border-slate-200 text-xs sm:text-sm font-medium text-slate-700 bg-white focus:outline-none">
+                  <!-- Options rendered dynamically -->
+                </select>
+              </div>
+              <button type="button" id="calc-add-product-btn" class="w-full sm:w-auto px-5 py-2 rounded-xl bg-slate-800 hover:bg-slate-700 text-white text-xs sm:text-sm font-bold flex items-center justify-center gap-1.5 transition-all">
+                <i class="fa-solid fa-plus"></i>
+                <span data-i18n="calculator.addBtn">დამატება</span>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Right Column: Financial Summary & One-Pager Export Actions (4 cols) -->
+        <div class="lg:col-span-4 space-y-6">
+          <div class="bg-slate-900 text-white rounded-3xl p-6 sm:p-8 space-y-6 shadow-2xl relative overflow-hidden">
+            
+            <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+              <h3 class="text-lg font-black text-white flex items-center gap-2">
+                <i class="fa-solid fa-receipt text-emerald-400"></i>
+                <span data-i18n="calculator.financialSummary">ფინანსური შეჯამება</span>
+              </h3>
+              <span id="calc-discount-badge" class="hidden px-2.5 py-0.5 rounded-full bg-emerald-500 text-white text-xs font-extrabold">
+                -15%
+              </span>
+            </div>
+
+            <!-- Price Breakdown Rows -->
+            <div class="space-y-3 text-sm">
+              <div class="flex items-center justify-between text-slate-400">
+                <span data-i18n="calculator.subtotal">საწყისი ჯამი:</span>
+                <span id="calc-summary-subtotal" class="font-bold text-white">0.00 ₾</span>
+              </div>
+              <div class="flex items-center justify-between text-emerald-400">
+                <span data-i18n="calculator.discount">B2B ფასდაკლება:</span>
+                <span id="calc-summary-discount" class="font-bold">-0.00 ₾</span>
+              </div>
+              <div class="flex items-center justify-between text-slate-400 text-xs">
+                <span data-i18n="calculator.vatIncluded">დღგ (18% ჩათვლილია):</span>
+                <span id="calc-summary-vat" class="font-medium text-slate-300">0.00 ₾</span>
+              </div>
+              <div class="pt-4 border-t border-slate-800 flex items-baseline justify-between">
+                <div>
+                  <span class="text-xs text-slate-400 uppercase tracking-wider block" data-i18n="calculator.totalToPay">საბოლოო ღირებულება:</span>
+                  <span id="calc-summary-total" class="text-3xl font-black text-sky-400">0.00 ₾</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action Buttons for Output Generation -->
+            <div class="space-y-3 pt-4 border-t border-slate-800">
+              
+              <!-- 1. Generate One-Pager Commercial Offer (Printable / PDF) -->
+              <button type="button" id="btn-generate-offer" class="w-full py-3.5 px-4 rounded-2xl bg-sky-500 hover:bg-sky-400 text-white font-bold text-sm shadow-lg shadow-sky-500/25 flex items-center justify-center gap-2 transition-all transform active:scale-98">
+                <i class="fa-solid fa-file-pdf text-base"></i>
+                <span data-i18n="calculator.generateOfferBtn">📄 კომერციული შეთავაზების გენერირება (One-Pager)</span>
+              </button>
+
+              <!-- 2. Send Direct to WhatsApp -->
+              <button type="button" id="btn-send-whatsapp" class="w-full py-3 px-4 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs sm:text-sm shadow-md flex items-center justify-center gap-2 transition-all">
+                <i class="fa-brands fa-whatsapp text-lg"></i>
+                <span data-i18n="calculator.sendWhatsAppBtn">💬 შეკვეთის გაგზავნა WhatsApp-ზე</span>
+              </button>
+
+              <!-- 3. Copy Details to Clipboard -->
+              <button type="button" id="btn-copy-summary" class="w-full py-2.5 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white font-semibold text-xs flex items-center justify-center gap-2 transition-colors">
+                <i class="fa-solid fa-copy"></i>
+                <span data-i18n="calculator.copySummaryBtn">📋 მონაცემების კოპირება</span>
+              </button>
+            </div>
+
+            <div class="pt-2 text-[11px] text-slate-400 text-center">
+              <i class="fa-solid fa-shield-halved text-emerald-400 mr-1"></i>
+              <span>შპს "ფანტასტიკლინ ჯორჯია" — ოფიციალური დოკუმენტბრუნვა და დღგ-ის ანგარიშ-ფაქტურა.</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       BRAND BENEFITS & DELIVERY SECTION (USPS)
+       ========================================== -->
+  <section id="benefits" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-14">
+        <span class="px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold uppercase tracking-wider inline-block mb-3">
+          FANTASTICLEAN ADVANTAGES
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight" data-i18n="benefits.title">
+          რატომ ირჩევენ FantastiClean Georgia-ს?
+        </h2>
+        <p class="text-slate-600 text-base mt-2" data-i18n="benefits.subtitle">
+          ჩვენი მიკროფიბრის ტექნოლოგია აერთიანებს მაქსიმალურ ეფექტურობას, ეკოლოგიურობასა და ეკონომიურობას
+        </p>
+      </div>
+
+      <!-- 6 Benefits Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- USP 1: 100% Eco-friendly -->
+        <div class="glass-card bg-white p-8 rounded-3xl border border-slate-200/80 shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-2xl mb-6 shadow-inner">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2" data-i18n="benefits.usp1Title">100% ეკომეგობრული</h3>
+            <p class="text-slate-600 text-sm leading-relaxed" data-i18n="benefits.usp1Desc">
+              სისუფთავე აგრესიული ქიმიკატების გარეშე. აშორებს ბაქტერიებისა და ჭუჭყის 99%-ს უბრალო წყლის გამოყენებით.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-emerald-600">
+            0% Toxic Detergents
+          </div>
+        </div>
+
+        <!-- USP 2: Anti-allergenic -->
+        <div class="glass-card bg-white p-8 rounded-3xl border border-slate-200/80 shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-sky-50 text-sky-600 flex items-center justify-center text-2xl mb-6 shadow-inner">
+              <i class="fa-solid fa-shield-virus"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2" data-i18n="benefits.usp2Title">ანტიალერგიული & უსაფრთხო</h3>
+            <p class="text-slate-600 text-sm leading-relaxed" data-i18n="benefits.usp2Desc">
+              სრულიად ჰიპოალერგიული ბოჭკოები. უსაფრთხოა ბავშვთა ოთახებისთვის, შინაური ცხოველებისა და მგრძნობიარე კანისთვის.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-sky-600">
+            Hypoallergenic Certified
+          </div>
+        </div>
+
+        <!-- USP 3: Reusable & Durable -->
+        <div class="glass-card bg-white p-8 rounded-3xl border border-slate-200/80 shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center text-2xl mb-6 shadow-inner">
+              <i class="fa-solid fa-rotate"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2" data-i18n="benefits.usp3Title">მრავალჯერადი & სუპერ გამძლე</h3>
+            <p class="text-slate-600 text-sm leading-relaxed" data-i18n="benefits.usp3Desc">
+              გაუძლებს 500-ზე მეტ მანქანურ რეცხვას ფორმისა და შემწოვი თვისებების დაკარგვის გარეშე. იდეალური ინვესტიციაა ბიზნესისთვის.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-amber-600">
+            500+ Washes Lifetime
+          </div>
+        </div>
+
+        <!-- USP 4: Fast Wolt & Glovo Delivery -->
+        <div class="glass-card bg-white p-8 rounded-3xl border border-slate-200/80 shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-cyan-50 text-cyan-600 flex items-center justify-center text-2xl mb-6 shadow-inner">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2" data-i18n="benefits.usp4Title">სწრაფი Wolt & Glovo მიტანა</h3>
+            <p class="text-slate-600 text-sm leading-relaxed" data-i18n="benefits.usp4Desc">
+              თბილისში მიწოდება 25-40 წუთში Wolt-ისა და Glovo-ს საშუალებით. რეგიონებში — ექსპრეს საკურიერო სერვისი.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-cyan-600">
+            Tbilisi Express in 30 mins
+          </div>
+        </div>
+
+        <!-- USP 5: 1100 GSM Density -->
+        <div class="glass-card bg-white p-8 rounded-3xl border border-slate-200/80 shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-2xl mb-6 shadow-inner">
+              <i class="fa-solid fa-water"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2" data-i18n="benefits.usp5Title">პრემიუმ 1100 GSM სტანდარტი</h3>
+            <p class="text-slate-600 text-sm leading-relaxed" data-i18n="benefits.usp5Desc">
+              მაღალი სიმკვრივის ნაქსოვი უზრუნველყოფს ზედაპირის მაქსიმალურ დაცვას და შეუდარებელ წყალშთანთქმას.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-indigo-600">
+            Top Global Weave Spec
+          </div>
+        </div>
+
+        <!-- USP 6: Trusted B2B Partner -->
+        <div class="glass-card bg-white p-8 rounded-3xl border border-slate-200/80 shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="w-14 h-14 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-2xl mb-6 shadow-inner">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2" data-i18n="benefits.usp6Title">სანდო B2B პარტნიორი</h3>
+            <p class="text-slate-600 text-sm leading-relaxed" data-i18n="benefits.usp6Desc">
+              ინდივიდუალური საბითუმო ფასები, დღგ-ის ანგარიშ-ფაქტურა, ოფიციალური ხელშეკრულებები სასტუმროებისთვის, კლინიკებისთვის და ავტოპარკებისთვის.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-slate-100 text-xs font-bold text-emerald-600">
+            Official B2B Contracting
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       WOLT & GLOVO PARTNERS SECTION
+       ========================================== -->
+  <section class="py-16 bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-gradient-to-r from-sky-50 via-slate-50 to-emerald-50 p-8 sm:p-12 rounded-3xl border border-slate-200/80 flex flex-col lg:flex-row items-center justify-between gap-8">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold mb-3">
+            <i class="fa-solid fa-bolt text-emerald-600"></i>
+            <span>EXPRESS DELIVERY PARTNERS</span>
+          </div>
+          <h3 class="text-2xl sm:text-3xl font-black text-slate-900">
+            შეუკვეთეთ Wolt-სა და Glovo-ზე მომენტალური მიტანით
+          </h3>
+          <p class="text-slate-600 text-sm mt-2 max-w-xl">
+            თბილისის ნებისმიერ წერტილში მიკროფიბრის ორიგინალი პროდუქცია თქვენს კართან სულ რაღაც 25-35 წუთში!
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-4">
+          <!-- Wolt Button -->
+          <a href="https://wolt.com" target="_blank" rel="noopener noreferrer" class="py-3 px-6 rounded-2xl bg-sky-500 hover:bg-sky-400 text-white font-extrabold text-sm flex items-center gap-2 shadow-md transition-all">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span>Wolt Tbilisi</span>
+          </a>
+
+          <!-- Glovo Button -->
+          <a href="https://glovoapp.com" target="_blank" rel="noopener noreferrer" class="py-3 px-6 rounded-2xl bg-amber-400 hover:bg-amber-300 text-slate-900 font-extrabold text-sm flex items-center gap-2 shadow-md transition-all">
+            <i class="fa-solid fa-truck-fast"></i>
+            <span>Glovo Georgia</span>
+          </a>
+
+          <!-- Direct Phone -->
+          <a href="tel:+995599773999" class="py-3 px-5 rounded-2xl bg-white hover:bg-slate-100 text-slate-800 border border-slate-200 font-bold text-sm flex items-center gap-2 shadow-xs transition-colors">
+            <i class="fa-solid fa-phone text-emerald-600"></i>
+            <span>+995 599 77 39 99</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CONTACT & CORPORATE INQUIRIES
+       ========================================== -->
+  <section id="contact" class="py-20 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Left Contact Info (5 cols) -->
+        <div class="lg:col-span-5 space-y-6">
+          <span class="px-3.5 py-1 rounded-full bg-sky-100 text-sky-700 text-xs font-extrabold uppercase tracking-wider inline-block">
+            GET IN TOUCH
+          </span>
+          <h2 class="text-3xl font-black text-slate-900 tracking-tight" data-i18n="contact.title">
+            დაგვიკავშირდით
+          </h2>
+          <p class="text-slate-600 text-sm leading-relaxed" data-i18n="contact.subtitle">
+            გაქვთ შეკითხვები ან გსურთ სატესტო ნიმუშების მიღება თქვენი კომპანიისთვის? მოგვწერეთ!
+          </p>
+
+          <div class="space-y-4 pt-4 text-xs sm:text-sm">
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-sky-600 shrink-0 shadow-xs">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <span class="font-bold text-slate-900 block" data-i18n="contact.addressTitle">მისამართი:</span>
+                <span class="text-slate-600" data-i18n="contact.addressVal">საქართველო, თბილისი, ალ. ყაზბეგის გამზ. 14</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-emerald-600 shrink-0 shadow-xs">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div>
+                <span class="font-bold text-slate-900 block" data-i18n="contact.phoneTitle">ტელეფონი:</span>
+                <a href="tel:+995599773999" class="text-emerald-600 font-bold hover:underline" data-i18n="contact.phoneVal">+995 599 77 39 99</a>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-sky-600 shrink-0 shadow-xs">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div>
+                <span class="font-bold text-slate-900 block" data-i18n="contact.emailTitle">ელ-ფოსტა:</span>
+                <span class="text-slate-600 font-mono text-xs" data-i18n="contact.emailVal">info@fantasticlean.ge | b2b@fantasticlean.ge</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-amber-500 shrink-0 shadow-xs">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div>
+                <span class="font-bold text-slate-900 block" data-i18n="contact.workingHoursTitle">სამუშაო საათები:</span>
+                <span class="text-slate-600" data-i18n="contact.workingHoursVal">ორშ - შაბ: 09:30 - 19:30</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Media Channels -->
+          <div class="pt-4">
+            <p class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-3">ოფიციალური სოციალური ქსელები:</p>
+            <div class="flex items-center gap-3">
+              <a href="https://www.facebook.com/p/Fantasticlean-Georgia-61561177402542/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-white border border-slate-200 text-sky-600 hover:bg-sky-50 flex items-center justify-center shadow-xs transition-all hover:scale-105" title="Facebook (Fantasticlean Georgia)">
+                <i class="fa-brands fa-facebook-f text-base"></i>
+              </a>
+              <a href="https://www.instagram.com/fantasticlean.georgia/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-white border border-slate-200 text-rose-500 hover:bg-rose-50 flex items-center justify-center shadow-xs transition-all hover:scale-105" title="Instagram (@fantasticlean.georgia)">
+                <i class="fa-brands fa-instagram text-base"></i>
+              </a>
+              <a href="https://wa.me/995599773999" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-white border border-slate-200 text-emerald-600 hover:bg-emerald-50 flex items-center justify-center shadow-xs transition-all hover:scale-105" title="WhatsApp (+995 599 77 39 99)">
+                <i class="fa-brands fa-whatsapp text-base"></i>
+              </a>
+              <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-white border border-slate-200 text-slate-800 hover:bg-slate-100 flex items-center justify-center shadow-xs transition-all hover:scale-105" title="TikTok">
+                <i class="fa-brands fa-tiktok text-base"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Contact Form (7 cols) -->
+        <div class="lg:col-span-7">
+          <div class="bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-sm">
+            <h3 class="text-lg font-black text-slate-900 mb-6">
+              გამოგვიგზავნეთ შეტყობინება
+            </h3>
+            
+            <form id="contact-form" class="space-y-4 text-xs sm:text-sm">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="font-bold text-slate-700 mb-1 block" data-i18n="contact.formName">თქვენი სახელი / ორგანიზაცია</label>
+                  <input type="text" required class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 font-medium focus:ring-2 focus:ring-sky-500 focus:bg-white focus:outline-none" placeholder="სახელი / კომპანია">
+                </div>
+                <div>
+                  <label class="font-bold text-slate-700 mb-1 block" data-i18n="contact.formEmail">ელ-ფოსტა</label>
+                  <input type="email" required class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 font-medium focus:ring-2 focus:ring-sky-500 focus:bg-white focus:outline-none" placeholder="name@domain.ge">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="font-bold text-slate-700 mb-1 block" data-i18n="contact.formPhone">ტელეფონის ნომერი</label>
+                  <input type="tel" required class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 font-medium focus:ring-2 focus:ring-sky-500 focus:bg-white focus:outline-none" placeholder="+995 5XX XX XX XX">
+                </div>
+                <div>
+                  <label class="font-bold text-slate-700 mb-1 block" data-i18n="contact.formSubject">თემა</label>
+                  <input type="text" class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 font-medium focus:ring-2 focus:ring-sky-500 focus:bg-white focus:outline-none" placeholder="B2B თანამშრომლობა / შეკვეთა">
+                </div>
+              </div>
+
+              <div>
+                <label class="font-bold text-slate-700 mb-1 block" data-i18n="contact.formMessage">შეტყობინება</label>
+                <textarea rows="4" required class="w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 font-medium focus:ring-2 focus:ring-sky-500 focus:bg-white focus:outline-none" placeholder="დაწერეთ თქვენი მოთხოვნა..."></textarea>
+              </div>
+
+              <button type="submit" class="w-full py-4 px-6 rounded-2xl bg-sky-600 hover:bg-sky-500 text-white font-bold text-sm shadow-md transition-all flex items-center justify-center gap-2">
+                <i class="fa-solid fa-paper-plane text-xs"></i>
+                <span data-i18n="contact.formSubmit">შეტყობინების გაგზავნა</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="bg-slate-900 text-slate-400 text-xs py-14 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        
+        <!-- Col 1: About & Logo -->
+        <div class="md:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <img src="assets/logo-white.png" alt="FantastiClean Georgia" class="h-12 w-12 object-contain" onerror="if(!this.dataset.t1){this.dataset.t1='1'; this.src='logo-white.png';} else {this.onerror=null; this.src='logo.png';}" />
+            <div class="flex flex-col">
+              <span class="text-xl sm:text-2xl font-black text-white tracking-tight leading-none">Fantasti<span class="text-sky-400">Clean</span></span>
+              <span class="text-[10px] font-extrabold tracking-[0.25em] text-emerald-400 uppercase mt-0.5">GEORGIA</span>
+            </div>
+          </div>
+          <p class="text-slate-400 text-xs leading-relaxed max-w-sm" data-i18n="footer.about">
+            FantastiClean Georgia (შპს 'ფანტასტიკლინ ჯორჯია') — ეკომეგობრული მიკროფიბრის ტექნოლოგიების და ავტო დითეილინგის აქსესუარების ლიდერი ბრენდი საქართველოში. იდეალური სისუფთავე ქიმიის გარეშე.
+          </p>
+          <div class="flex items-center gap-2 text-slate-300">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            <span class="font-semibold">FantastiClean Georgia LLC • ს/კ: 405678912</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="space-y-3">
+          <h4 class="font-bold text-white uppercase tracking-wider text-xs" data-i18n="footer.quickLinks">სწრაფი ბმულები</h4>
+          <ul class="space-y-2">
+            <li><a href="#home" class="hover:text-white transition-colors" data-i18n="nav.home">მთავარი</a></li>
+            <li><a href="#products" class="hover:text-white transition-colors" data-i18n="nav.products">პროდუქცია</a></li>
+            <li><a href="#car-detailing" class="hover:text-white transition-colors" data-i18n="nav.carDetailing">Car Detailing (1100 GSM)</a></li>
+            <li><a href="#calculator" class="hover:text-white transition-colors" data-i18n="nav.b2bOffer">B2B შეთავაზება</a></li>
+            <li><a href="#benefits" class="hover:text-white transition-colors" data-i18n="nav.benefits">უპირატესობები</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Legal & Support -->
+        <div class="space-y-3">
+          <h4 class="font-bold text-white uppercase tracking-wider text-xs" data-i18n="footer.legal">სამართლებრივი ინფორმაცია</h4>
+          <ul class="space-y-2">
+            <li><a href="#terms" class="hover:text-white transition-colors" data-i18n="footer.terms">წესები და პირობები</a></li>
+            <li><a href="#privacy" class="hover:text-white transition-colors" data-i18n="footer.privacy">კონფიდენციალურობა</a></li>
+            <li><a href="#delivery" class="hover:text-white transition-colors" data-i18n="footer.deliveryTerms">მიწოდებისა და დაბრუნების წესი</a></li>
+            <li><a href="tel:+995599773999" class="text-emerald-400 hover:text-emerald-300 font-bold block pt-2">+995 599 77 39 99</a></li>
+          </ul>
+          
+          <!-- Footer Social Links -->
+          <div class="flex items-center gap-2 pt-2">
+            <a href="https://www.facebook.com/p/Fantasticlean-Georgia-61561177402542/" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 flex items-center justify-center transition-all" title="Facebook">
+              <i class="fa-brands fa-facebook-f text-xs"></i>
+            </a>
+            <a href="https://www.instagram.com/fantasticlean.georgia/" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 flex items-center justify-center transition-all" title="Instagram">
+              <i class="fa-brands fa-instagram text-xs"></i>
+            </a>
+            <a href="https://wa.me/995599773999" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-slate-800 text-emerald-400 hover:text-white hover:bg-emerald-600 flex items-center justify-center transition-all" title="WhatsApp">
+              <i class="fa-brands fa-whatsapp text-xs"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-slate-500">
+        <p data-i18n="footer.copyright">© 2026 FantastiClean Georgia LLC. ყველა უფლება დაცულია.</p>
+        <p class="text-[11px]">Eco-Friendly Microfiber & Car Detailing Technology • Tbilisi, Georgia</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       MODAL 1: ONE-PAGER PRINTABLE COMMERCIAL OFFER
+       ========================================== -->
+  <div id="printable-offer-modal" class="hidden fixed inset-0 z-50 bg-slate-900/80 overflow-y-auto p-4 sm:p-6 lg:p-10 items-center justify-center">
+    <div id="printable-offer-doc" class="w-full">
+      <!-- Generated dynamically by js/app.js -->
+    </div>
+  </div>
+
+  <!-- ==========================================
+       MODAL 2: PRODUCT QUICK VIEW MODAL
+       ========================================== -->
+  <div id="product-modal" class="hidden fixed inset-0 z-50 bg-slate-900/75 items-center justify-center p-4">
+    <div id="product-modal-content" class="w-full flex justify-center">
+      <!-- Generated dynamically by js/app.js -->
+    </div>
+  </div>
+
+  <!-- ==========================================
+       MODAL 3: WOLT & GLOVO DELIVERY SELECTOR
+       ========================================== -->
+  <div id="delivery-modal" class="hidden fixed inset-0 z-50 bg-slate-900/75 items-center justify-center p-4">
+    <div class="relative bg-white rounded-3xl p-6 sm:p-8 max-w-lg w-full shadow-2xl border border-slate-200">
+      
+      <button type="button" onclick="closeDeliveryModal()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center transition-all">
+        <i class="fa-solid fa-xmark text-sm"></i>
+      </button>
+
+      <div class="text-center mb-6">
+        <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-xl mx-auto mb-3">
+          <i class="fa-solid fa-motorcycle"></i>
+        </div>
+        <h3 class="text-xl font-black text-slate-900" data-i18n="deliveryModal.title">
+          ექსპრეს მიტანა Wolt & Glovo-თი
+        </h3>
+        <p class="text-xs text-slate-500 mt-1" data-i18n="deliveryModal.subtitle">
+          მიიღეთ FantastiClean-ის ორიგინალი პროდუქცია თქვენს კართან 25-35 წუთში!
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        <!-- Wolt Option -->
+        <a href="https://wolt.com" target="_blank" rel="noopener noreferrer" class="p-4 rounded-2xl border-2 border-sky-100 hover:border-sky-500 bg-sky-50/50 flex items-center justify-between transition-all group">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-sky-500 text-white flex items-center justify-center font-black text-sm">
+              W
+            </div>
+            <div class="text-left">
+              <h4 class="font-bold text-slate-900 text-sm group-hover:text-sky-600" data-i18n="deliveryModal.woltTitle">Wolt თბილისი</h4>
+              <p class="text-[11px] text-slate-500" data-i18n="deliveryModal.woltDesc">სწრაფი მიტანა კურიერით. ნახეთ ჩვენი ოფიციალური მენიუ Wolt-ის აპლიკაციაში.</p>
+            </div>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square text-sky-500 text-xs"></i>
+        </a>
+
+        <!-- Glovo Option -->
+        <a href="https://glovoapp.com" target="_blank" rel="noopener noreferrer" class="p-4 rounded-2xl border-2 border-amber-100 hover:border-amber-500 bg-amber-50/50 flex items-center justify-between transition-all group">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-amber-400 text-slate-900 flex items-center justify-center font-black text-sm">
+              G
+            </div>
+            <div class="text-left">
+              <h4 class="font-bold text-slate-900 text-sm group-hover:text-amber-600" data-i18n="deliveryModal.glovoTitle">Glovo საქართველო</h4>
+              <p class="text-[11px] text-slate-500" data-i18n="deliveryModal.glovoDesc">შეუკვეთეთ Glovo-ს მეშვეობით თბილისში, ბათუმსა და ქუთაისში.</p>
+            </div>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square text-amber-500 text-xs"></i>
+        </a>
+      </div>
+
+      <div class="mt-6 pt-4 border-t border-slate-100 text-center">
+        <p class="text-xs text-slate-500 mb-2" data-i18n="deliveryModal.directPhone">პირდაპირი სატელეფონო შეკვეთა / საკურიერო მიწოდება:</p>
+        <a href="tel:+995599773999" class="text-emerald-600 font-black text-sm hover:underline" data-i18n="deliveryModal.callNow">
+          დარეკვა: +995 599 77 39 99
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==========================================
+       MODAL 4: OFFICIAL FLYER & PRICE GUIDE VIEWER
+       ========================================== -->
+  <div id="flyer-modal" class="hidden fixed inset-0 z-50 bg-slate-900/85 items-center justify-center p-4 overflow-y-auto">
+    <div class="relative bg-white rounded-3xl p-4 sm:p-6 max-w-3xl w-full shadow-2xl border border-slate-200 my-8">
+      <div class="flex items-center justify-between pb-4 mb-4 border-b border-slate-100">
+        <div class="flex items-center gap-3">
+          <img src="logo.png" alt="FantastiClean" class="h-9 w-9 object-contain" onerror="this.onerror=null; this.src='images/logo.png';" />
+          <div>
+            <h4 class="font-black text-slate-900 text-sm">FantastiClean Georgia — ოფიციალური პრაის-ლისტი</h4>
+            <p class="text-[11px] text-slate-500">მრავალფუნქციური რულონების ინფორმაცია და ფასები</p>
+          </div>
+        </div>
+        <button type="button" onclick="closeFlyerModal()" class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center transition-all">
+          <i class="fa-solid fa-xmark text-sm"></i>
+        </button>
+      </div>
+
+      <div class="max-h-[75vh] overflow-y-auto rounded-2xl border border-slate-200/80 flex justify-center bg-slate-50 p-2 shadow-inner">
+        <img src="assets/products-guide.jpg" alt="FantastiClean Official Flyer" class="w-full max-w-2xl h-auto rounded-xl shadow-md" onerror="if(!this.dataset.t1){this.dataset.t1='1'; this.src='images/products-guide.jpg';} else if(!this.dataset.t2){this.dataset.t2='1'; this.src='products-guide.jpg';} else {this.onerror=null; this.src='logo.png';}" />
+      </div>
+
+      <div class="pt-4 flex items-center justify-between gap-3">
+        <a href="assets/products-guide.jpg" download="FantastiClean-Rolls-Prices.jpg" class="py-2.5 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold flex items-center gap-1.5 transition-colors">
+          <i class="fa-solid fa-download text-emerald-600"></i>
+          <span>ფაილის ჩამოტვირთვა</span>
+        </a>
+        <button type="button" onclick="closeFlyerModal()" class="py-2.5 px-5 rounded-xl bg-sky-600 hover:bg-sky-500 text-white text-xs font-bold transition-colors">
+          დახურვა
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       FLOATING WHATSAPP & MESSENGER QUICK CHAT
+       ========================================== -->
+  <div class="fixed bottom-6 right-6 z-40">
+    
+    <!-- Chat Popup Box -->
+    <div id="floating-chat-box" class="hidden absolute bottom-16 right-0 w-80 bg-white rounded-3xl shadow-2xl border border-slate-200 overflow-hidden mb-2 animate-scaleUp">
+      <!-- Chat Header -->
+      <div class="bg-gradient-to-r from-slate-900 to-slate-800 text-white p-4 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="relative">
+            <div class="w-11 h-11 rounded-full bg-white flex items-center justify-center p-1.5 shadow-sm">
+              <img src="logo.png" alt="FantastiClean" class="h-8 w-8 object-contain" onerror="this.onerror=null; this.src='images/logo.png';" />
+            </div>
+            <span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-emerald-400 border-2 border-slate-900"></span>
+          </div>
+          <div>
+            <h4 class="font-bold text-sm text-white" data-i18n="chatWidget.header">FantastiClean კონსულტაცია</h4>
+            <span class="text-[11px] text-emerald-400 font-semibold" data-i18n="chatWidget.badge">● ონლაინ</span>
+          </div>
+        </div>
+        <button type="button" id="floating-chat-close" class="text-slate-400 hover:text-white p-1">
+          <i class="fa-solid fa-xmark text-sm"></i>
+        </button>
+      </div>
+
+      <!-- Chat Body -->
+      <div class="p-4 space-y-3 text-xs">
+        <div class="bg-slate-100 p-3 rounded-2xl rounded-tl-none text-slate-700 leading-relaxed" data-i18n="chatWidget.greeting">
+          გამარჯობა! 👋 რით შეგვიძლია დაგეხმაროთ? დაგვიკავშირდით პირდაპირ მესენჯერში ან WhatsApp-ში:
+        </div>
+
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/995599773999" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-white font-bold flex items-center justify-center gap-2 shadow-xs transition-colors">
+          <i class="fa-brands fa-whatsapp text-base"></i>
+          <span data-i18n="chatWidget.whatsappBtn">WhatsApp ჩატი (+995 599 77 39 99)</span>
+        </a>
+
+        <!-- Facebook Messenger Button -->
+        <a href="https://www.facebook.com/p/Fantasticlean-Georgia-61561177402542/" target="_blank" rel="noopener noreferrer" class="w-full py-2.5 px-4 rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-bold flex items-center justify-center gap-2 shadow-xs transition-colors">
+          <i class="fa-brands fa-facebook-messenger text-base"></i>
+          <span data-i18n="chatWidget.messengerBtn">Facebook გვერდი / Messenger</span>
+        </a>
+
+        <!-- Phone Call Button -->
+        <a href="tel:+995599773999" class="w-full py-2 px-4 rounded-xl bg-slate-50 hover:bg-slate-100 text-slate-800 font-bold flex items-center justify-center gap-2 border border-slate-200 transition-colors">
+          <i class="fa-solid fa-phone text-emerald-600 text-xs"></i>
+          <span data-i18n="chatWidget.phoneBtn">პირდაპირი ზარი (+995 599 77 39 99)</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Floating Toggle Button -->
+    <button type="button" id="floating-chat-toggle" class="floating-chat-btn w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white flex items-center justify-center text-2xl shadow-xl focus:outline-none relative" title="FantastiClean Quick Chat">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-sky-400 border-2 border-white"></span>
+    </button>
+
+  </div>
+
+  <!-- JavaScript Scripts -->
+  <script src="js/translations.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
